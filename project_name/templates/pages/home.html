@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% load staticfiles i18n %}
+
+{% block bodyattributes %}ng-app="app" ng-cloak{% endblock %}
+
+{% block content %}
+<app>
+  Loading...
+</app>
+
+<script src="{% static 'js/app.js' %}"></script>
+{% endblock %}

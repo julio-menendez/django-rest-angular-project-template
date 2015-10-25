@@ -1,0 +1,17 @@
+# Pro-tip: Try not to put anything here. There should be no dependency in
+#	production that isn't in staging.
+-r base.txt
+
+# WSGI Handler
+# ------------------------------------------------
+gevent==1.0.2
+gunicorn==19.3.0
+
+# Static and Media Storage
+# ------------------------------------------------
+boto==2.38.0
+django-storages-redux==1.3
+
+# Mandrillapp for email sending
+# ------------------------------------------------
+djrill==1.4.0
